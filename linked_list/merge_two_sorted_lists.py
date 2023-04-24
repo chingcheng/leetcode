@@ -1,7 +1,8 @@
 # You are given the heads of two sorted linked lists list1 and list2.
 
 # Merge the two lists in a one sorted list.
-# The list should be made by splicing together the nodes of the first two lists.
+# The list should be made by splicing together
+# the nodes of the first two lists.
 
 # Return the head of the merged linked list.
 
@@ -14,11 +15,6 @@ class ListNode(object):
 
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
-        """
-        :type list1: Optional[ListNode]
-        :type list2: Optional[ListNode]
-        :rtype: Optional[ListNode]
-        """
         dummy_head = ListNode(None)
         tail = dummy_head
         current_1 = list1
