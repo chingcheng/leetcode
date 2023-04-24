@@ -15,4 +15,4 @@ class Solution(object):
             current.next = prev
             prev = current
             current = next
-        return prev
+        return prev 
