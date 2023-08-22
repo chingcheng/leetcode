@@ -4,12 +4,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        product = 1
+        result = 1
         for n in nums:
-            product *= n
-        if product < 0:
-            return -1
-        if product > 0:
-            return 1
-        if product == 0:
-            return 0
+            if n < 0:
+                result *= -1
+            if n == 0:
+                return 0
+            if n > 0:
+                result *= 1
+
+        return result
